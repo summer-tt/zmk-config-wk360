@@ -41,7 +41,7 @@
             bindings = <
 &kp GRAVE                &kp N1           &kp N2          &kp N3        &kp N4        &kp N5                                                                                   &kp N6  &kp N7         &kp N8         &kp N9           &kp N0               &kp MINUS
 &kp TAB                  &kp Q            &kp W           &kp E         &kp R         &kp T                                                                                    &kp Y   &kp U          &kp I          &kp O            &kp P                &kp BSLH
-&mt LEFT_CONTROL ESCAPE  &hm LEFT_META A  &hm LEFT_ALT S  &hm_lt 1 D    &kp F         &kp G              &kp HOME    &kp LC(LA(DEL))      &kp RG(L)  &kp END                   &kp H   &kp J          &hm_lt 1 K     &hm RIGHT_ALT L  &hm RIGHT_META SEMI  &kp SQT
+&mt LEFT_CONTROL ESCAPE  &hm LEFT_META A  &hm LEFT_ALT S  &kp D         &hm_lt 1 F    &kp G              &kp HOME    &kp LC(LA(DEL))      &kp RG(L)  &kp END                   &kp H   &hm_lt 1 J     &kp K          &hm RIGHT_ALT L  &hm RIGHT_META SEMI  &kp SQT
 &kp LSHFT                &kp Z            &kp X           &kp C         &kp V         &kp B                          &kp PG_UP            &kp HOME                             &kp N   &kp M          &kp COMMA      &kp DOT          &kp FSLH             &kp RSHFT
                          &kp LCTRL        &kp LWIN        &kp LEFT_ALT  &kp LEFT_ALT          &kp SPACE  &kp DELETE  &kp PAGE_DOWN        &kp END    &kp BACKSPACE  &kp ENTER          &kp RIGHT_ALT  &kp RIGHT_ALT  &kp RIGHT_WIN    &mo 9
             >;
