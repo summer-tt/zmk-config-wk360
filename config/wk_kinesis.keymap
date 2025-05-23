@@ -39,21 +39,21 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp GRAVE                &kp N1           &kp N2          &kp N3        &kp N4        &kp N5                                                                                             &kp N6  &kp N7         &kp N8         &kp N9           &kp N0               &kp MINUS
-&kp TAB                  &kp Q            &kp W           &kp E         &kp R         &kp T                                                                                              &kp Y   &kp U          &kp I          &kp O            &kp P                &kp BSLH
-&mt LEFT_CONTROL ESCAPE  &hm LEFT_META A  &hm LEFT_ALT S  &hm_lt 1 D    &kp F         &kp G              &kp LC(LA(DELETE))  &kp LG(L)          &kp UP_ARROW  &kp DOWN_ARROW             &kp H   &kp J          &hm_lt 1 K     &hm RIGHT_ALT L  &hm RIGHT_META SEMI  &kp SQT
-&kp LSHFT                &kp Z            &kp X           &kp C         &kp V         &kp B                                  &kp PG_UP          &kp HOME                                 &kp N   &kp M          &kp COMMA      &kp DOT          &kp FSLH             &kp RSHFT
-                         &kp LCTRL        &kp LWIN        &kp LEFT_ALT  &kp LEFT_ALT          &kp SPACE  &kp DELETE          &kp PAGE_DOWN      &kp END       &kp BACKSPACE   &kp ENTER          &kp RIGHT_ALT  &kp RIGHT_ALT  &kp RIGHT_WIN    &mo 9
+&kp GRAVE                &kp N1           &kp N2          &kp N3        &kp N4        &kp N5                                                                                   &kp N6  &kp N7         &kp N8         &kp N9           &kp N0               &kp MINUS
+&kp TAB                  &kp Q            &kp W           &kp E         &kp R         &kp T                                                                                    &kp Y   &kp U          &kp I          &kp O            &kp P                &kp BSLH
+&mt LEFT_CONTROL ESCAPE  &hm LEFT_META A  &hm LEFT_ALT S  &hm_lt 1 D    &kp F         &kp G              &kp HOME    &kp LC(LA(DEL))      &kp RG(L)  &kp END                   &kp H   &kp J          &hm_lt 1 K     &hm RIGHT_ALT L  &hm RIGHT_META SEMI  &kp SQT
+&kp LSHFT                &kp Z            &kp X           &kp C         &kp V         &kp B                          &kp PG_UP            &kp HOME                             &kp N   &kp M          &kp COMMA      &kp DOT          &kp FSLH             &kp RSHFT
+                         &kp LCTRL        &kp LWIN        &kp LEFT_ALT  &kp LEFT_ALT          &kp SPACE  &kp DELETE  &kp PAGE_DOWN        &kp END    &kp BACKSPACE  &kp ENTER          &kp RIGHT_ALT  &kp RIGHT_ALT  &kp RIGHT_WIN    &mo 9
             >;
         };
 
         layer_1 {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4            &kp F5             &kp F7                                                      &kp F7          &kp F8          &kp F9        &kp F10          &kp F11  &kp F12
-&trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans                                                      &trans          &trans          &trans        &trans           &trans   &trans
-&trans  &trans  &trans  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans          &trans  &trans      &trans  &trans          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans   &trans
-&trans  &trans  &trans  &kp MINUS         &kp EQUAL          &trans                  &trans      &trans                  &trans          &trans          &trans        &trans           &trans   &trans
-        &trans  &trans  &kp UNDERSCORE    &kp PLUS                   &trans  &trans  &trans      &trans  &trans  &trans                  &trans          &trans        &trans           &trans
+&kp F1  &kp F2  &kp F3          &kp F4            &kp F5             &kp F7                                                         &kp F7          &kp F8          &kp F9        &kp F10          &kp F11  &kp F12
+&trans  &trans  &kp UNDERSCORE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PLUS                                                       &trans          &trans          &trans        &trans           &trans   &trans
+&trans  &trans  &kp MINUS       &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp EQUAL          &trans  &trans      &trans  &trans          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans   &trans
+&trans  &trans  &trans          &trans            &trans             &trans                     &trans      &trans                  &trans          &trans          &trans        &trans           &trans   &trans
+        &trans  &trans          &trans            &trans                        &trans  &trans  &trans      &trans  &trans  &trans                  &trans          &trans        &trans           &trans
             >;
         };
 
