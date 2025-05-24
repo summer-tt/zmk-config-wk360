@@ -17,7 +17,7 @@
 
             hold-trigger-on-release;
             quick-tap-ms = <175>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <250>;
         };
 
         hm_lt: homerow_mods_lt {
@@ -28,7 +28,7 @@
             flavor = "balanced";
             hold-trigger-on-release;
             quick-tap-ms = <175>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <250>;
             bindings = <&mo>, <&kp>;
         };
 
