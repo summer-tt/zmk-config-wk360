@@ -74,7 +74,7 @@
 &trans     &kp HOME      &kp DELETE    &kp LS(INSERT)  &kp BACKSPACE     &kp END                                                      &trans        &trans             &trans           &trans         &trans        &trans
 &kp GRAVE  &kp N1        &kp N2        &kp N3          &kp N4            &kp N5           &trans  &trans      &trans  &trans          &kp NUMBER_6  &kp N7             &kp N8           &kp N9         &kp N0        &kp BACKSPACE
 &trans     &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans                   &trans      &trans                  &trans        &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp LEFT_GUI  &trans
-           &trans        &trans        &trans          &trans                     &trans  &trans  &trans      &trans  &trans  &trans                &trans             &trans           &trans         &trans
+           &trans        &trans        &kp HOME        &kp END                    &trans  &trans  &trans      &trans  &trans  &trans                &trans             &trans           &trans         &trans
             >;
         };
 
