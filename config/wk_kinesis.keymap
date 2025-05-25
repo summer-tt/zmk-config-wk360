@@ -60,21 +60,21 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp GRAVE                &kp N1              &kp N2            &kp N3            &kp N4              &kp N5                                                                                                          &kp N6      &kp N7               &kp N8               &kp N9               &kp N0                  &trans
-&hm CAPSLOCK TAB         &kp Q               &kp W             &kp E             &kp R               &kp T                                                                                                           &kp Y       &kp U                &kp I                &kp O                &kp P                   &kp BSLH
-&mt LEFT_CONTROL ESCAPE  &hm LEFT_META A     &hm LEFT_ALT S    &hm LEFT_SHIFT D  &hm LEFT_CONTROL F  &hm_lt 3 G                  &kp DELETE  &kp LC(LA(DEL))               &kp RG(L)  &kp BACKSPACE                  &hm_lt 3 H  &hm RIGHT_CONTROL J  &hm RIGHT_SHIFT K    &hm RIGHT_ALT L      &hm RIGHT_META SEMI     &kp SQT
-&kp LEFT_SHIFT           &hm LEFT_CONTROL Z  &hm LEFT_SHIFT X  &hm LEFT_ALT C    &hm LEFT_GUI V      &kp B                                   &kp LG(LS(S))                 &trans                                    &kp N       &hm RIGHT_GUI M      &hm RIGHT_ALT COMMA  &hm RIGHT_SHIFT DOT  &hm RIGHT_CONTROL FSLH  &kp RIGHT_SHIFT
-                         &mo 8               &kp LWIN          &kp PLUS          &kp EQUAL                       &hm_lt 1 SPACE  &trans      &sk LC(LA(LS(LEFT_GUI)))      &trans     &trans         &hm_lt 2 ENTER              &kp UNDER            &kp MINUS            &kp RIGHT_GUI        &trans
+&kp GRAVE                &kp N1           &kp N2          &kp N3            &kp N4              &kp N5                                                                                                                  &kp N6      &kp N7               &kp N8             &kp N9           &kp N0               &trans
+&hm CAPSLOCK TAB         &kp Q            &kp W           &kp E             &kp R               &kp T                                                                                                                   &kp Y       &kp U                &kp I              &kp O            &kp P                &kp BSLH
+&mt LEFT_CONTROL ESCAPE  &hm LEFT_META A  &hm LEFT_ALT S  &hm LEFT_SHIFT D  &hm LEFT_CONTROL F  &hm_lt 3 G                  &kp DELETE          &kp LC(LA(DEL))               &kp RG(L)  &kp BACKSPACE                  &hm_lt 3 H  &hm RIGHT_CONTROL J  &hm RIGHT_SHIFT K  &hm RIGHT_ALT L  &hm RIGHT_META SEMI  &kp SQT
+&kp LEFT_SHIFT           &kp Z            &kp X           &kp C             &kp V               &kp B                                           &kp LG(LS(S))                 &trans                                    &kp N       &kp M                &kp COMMA          &kp DOT          &kp FSLH             &kp RIGHT_SHIFT
+                         &mo 8            &kp LWIN        &kp HOME          &kp END                         &hm_lt 1 SPACE  &hm_lt 4 BACKSPACE  &sk LC(LA(LS(LEFT_GUI)))      &trans     &trans         &hm_lt 2 ENTER              &kp BACKSPACE        &kp DELETE         &kp RIGHT_GUI    &none
             >;
         };
 
         layer_1 {
             bindings = <
-&kp F1     &kp F2           &kp F3        &kp F4          &kp F5            &kp F7                                                              &kp F7        &kp F8             &kp F9           &kp F10               &kp F11                &kp F12
-&kp TILDE  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH        &kp DOLLAR        &kp PERCENT                                                         &kp CARET     &kp AMPERSAND      &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&kp GRAVE  &kp N1           &kp N2        &kp N3          &kp N4            &kp N5                  &trans  &trans      &trans  &trans          &kp NUMBER_6  &kp N7             &kp N8           &kp N9                &kp N0                 &kp BACKSPACE
-&trans     &kp LEFT_GUI     &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LS(INSERT)                  &trans      &trans                  &trans        &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp RIGHT_ALT         &kp LEFT_GUI           &trans
-           &trans           &trans        &kp HOME        &kp END                           &trans  &trans  &trans      &trans  &trans  &trans                &trans             &trans           &trans                &trans
+&kp F1     &kp F2           &kp F3           &kp F4             &kp F5               &kp F7                                                              &kp F7        &kp F8             &kp F9           &kp F10               &kp F11                &kp F12
+&kp TILDE  &kp EXCLAMATION  &kp AT_SIGN      &kp HASH           &kp DOLLAR           &kp PERCENT                                                         &kp CARET     &kp AMPERSAND      &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&kp GRAVE  &mt LEFT_GUI N1  &hm LEFT_ALT N2  &hm N3 LEFT_SHIFT  &hm N4 LEFT_CONTROL  &kp N5                  &trans  &trans      &trans  &trans          &kp NUMBER_6  &kp N7             &kp N8           &kp N9                &kp N0                 &kp BACKSPACE
+&trans     &none            &none            &none              &none                &kp LS(INSERT)                  &trans      &trans                  &trans        &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp RIGHT_ALT         &kp LEFT_GUI           &trans
+           &trans           &trans           &kp HOME           &kp END                              &trans  &trans  &trans      &trans  &trans  &trans                &trans             &trans           &trans                &trans
             >;
         };
 
