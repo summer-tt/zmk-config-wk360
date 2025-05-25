@@ -93,7 +93,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                                                      &trans     &trans     &trans            &trans             &trans        &trans
 &trans  &trans  &trans  &trans  &trans  &trans                                                      &kp MINUS  &kp PLUS   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans        &kp PIPE
 &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans      &trans  &trans          &kp UNDER  &kp EQUAL  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp COLON     &kp DOUBLE_QUOTES
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans     &trans     &kp LESS_THAN     &kp GREATER_THAN   &kp QUESTION  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &kp GRAVE  &kp TILDE  &kp LESS_THAN     &kp GREATER_THAN   &kp QUESTION  &trans
         &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans             &trans     &trans            &trans             &trans
             >;
         };
