@@ -90,10 +90,10 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                                      &trans     &trans     &trans            &trans             &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                      &kp UNDER  &kp PLUS   &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans      &trans  &trans          &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans     &trans     &trans            &trans             &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                      &trans     &trans     &trans            &trans             &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                      &kp UNDER  &kp PLUS   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans        &kp PIPE
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans      &trans  &trans          &kp MINUS  &kp EQUAL  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp COLON     &kp DOUBLE_QUOTES
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans     &trans     &kp LESS_THAN     &kp GREATER_THAN   &kp QUESTION  &trans
         &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans             &trans     &trans            &trans             &trans
             >;
         };
