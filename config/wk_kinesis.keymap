@@ -65,7 +65,7 @@
 &hm CAPSLOCK TAB         &kp Q            &kp W           &kp E             &kp R               &kp T                                                                                                                   &kp Y       &kp U                &kp I              &kp O            &kp P                &kp BSLH
 &mt LEFT_CONTROL ESCAPE  &hm LEFT_META A  &hm LEFT_ALT S  &hm LEFT_SHIFT D  &hm LEFT_CONTROL F  &hm_lt 3 G                  &kp DELETE          &kp LC(LA(DEL))               &kp RG(L)  &kp BACKSPACE                  &hm_lt 3 H  &hm RIGHT_CONTROL J  &hm RIGHT_SHIFT K  &hm RIGHT_ALT L  &hm RIGHT_META SEMI  &kp SQT
 &kp LEFT_SHIFT           &kp Z            &kp X           &kp C             &kp V               &kp B                                           &kp LG(LS(S))                 &trans                                    &kp N       &kp M                &kp COMMA          &kp DOT          &kp FSLH             &kp RIGHT_SHIFT
-                         &mo 8            &kp LWIN        &kp HOME          &kp END                         &hm_lt 1 SPACE  &hm_lt 4 BACKSPACE  &sk LC(LA(LS(LEFT_GUI)))      &trans     &trans         &hm_lt 2 ENTER              &kp BACKSPACE        &kp DELETE         &kp RIGHT_GUI    &none
+                         &mo 8            &kp LWIN        &kp LS(INSERT)    &kp LEFT_ALT                    &hm_lt 1 SPACE  &hm_lt 4 BACKSPACE  &sk LC(LA(LS(LEFT_GUI)))      &trans     &trans         &hm_lt 2 ENTER              &kp HOME             &kp END            &kp RIGHT_GUI    &none
             >;
         };
 
