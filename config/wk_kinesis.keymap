@@ -61,11 +61,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp GRAVE                &kp N1           &kp N2          &kp N3            &kp N4              &kp N5                                                                                                              &kp N6  &kp N7               &kp N8             &kp N9           &kp N0               &trans
-&hm CAPSLOCK TAB         &kp Q            &kp W           &kp E             &kp R               &kp T                                                                                                               &kp Y   &kp U                &kp I              &kp O            &kp P                &kp BSLH
-&mt LEFT_CONTROL ESCAPE  &hm LEFT_META A  &hm LEFT_ALT S  &hm LEFT_SHIFT D  &hm LEFT_CONTROL F  &kp G                   &kp DELETE          &kp LC(LA(DEL))               &kp RG(L)  &kp BACKSPACE                  &kp H   &hm RIGHT_CONTROL J  &hm RIGHT_SHIFT K  &hm RIGHT_ALT L  &hm RIGHT_META SEMI  &kp SQT
-&kp LEFT_SHIFT           &kp Z            &kp X           &kp C             &hm_lt 3 V          &kp B                                       &kp LG(LS(S))                 &trans                                    &kp N   &kp M                &kp COMMA          &kp DOT          &kp FSLH             &kp RIGHT_SHIFT
-                         &mo 8            &kp LWIN        &kp LS(INSERT)    &kp LEFT_ALT                &hm_lt 1 SPACE  &hm_lt 4 BACKSPACE  &sk LC(LA(LS(LEFT_GUI)))      &trans     &trans         &hm_lt 2 ENTER          &kp HOME             &kp END            &kp RIGHT_GUI    &none
+&kp GRAVE                &kp N1  &kp N2          &kp N3          &kp N4              &kp N5                                                                                                              &kp N6  &kp N7               &kp N8           &kp N9           &kp N0    &trans
+&hm CAPSLOCK TAB         &kp Q   &kp W           &kp E           &kp R               &kp T                                                                                                               &kp Y   &kp U                &kp I            &kp O            &kp P     &kp BSLH
+&mt LEFT_CONTROL ESCAPE  &kp A   &hm LEFT_GUI S  &hm LEFT_ALT D  &hm LEFT_CONTROL F  &kp G                   &kp DELETE          &kp LC(LA(DEL))               &kp RG(L)  &kp BACKSPACE                  &kp H   &hm RIGHT_CONTROL J  &hm RIGHT_ALT K  &hm RIGHT_GUI L  &kp SEMI  &kp SQT
+&kp LEFT_SHIFT           &kp Z   &kp X           &kp C           &hm_lt 3 V          &kp B                                       &kp LG(LS(S))                 &trans                                    &kp N   &kp M                &kp COMMA        &kp DOT          &kp FSLH  &kp RIGHT_SHIFT
+                         &mo 8   &kp LWIN        &kp LS(INSERT)  &kp LEFT_ALT                &hm_lt 1 SPACE  &hm_lt 4 BACKSPACE  &sk LC(LA(LS(LEFT_GUI)))      &trans     &trans         &hm_lt 2 ENTER          &kp HOME             &kp END          &kp RIGHT_GUI    &none
             >;
         };
 
