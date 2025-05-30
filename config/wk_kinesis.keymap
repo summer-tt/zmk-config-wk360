@@ -52,6 +52,15 @@
             flavor = "balanced";
             quick-tap-ms = <175>;
         };
+
+        parenbrace: ParenthesisOrBrace {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PARENBRACE";
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp LEFT_BRACE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     combos {
@@ -78,11 +87,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&trans                   &kp N1          &kp N2                     &kp N3                 &kp N4                   &kp N5                                                                                                    &kp N6      &kp N7               &kp N8            &kp N9             &kp N0              &bspc_del
-&kp TAB                  &hm LEFT_ALT Q  &kp W                      &kp E                  &kp R                    &kp T                                                                                                     &kp Y       &kp U                &kp I             &kp O              &kp P               &kp BSLH
-&mt LEFT_CONTROL ESCAPE  &hm LEFT_GUI A  &hm LEFT_SHIFT S           &hm LEFT_ALT D         &hm LEFT_CONTROL F       &hm_lt 2 G                  &kp DELETE     &kp LC(LA(DEL))      &kp RG(L)  &kp DELETE                     &hm_lt 2 H  &hm RIGHT_CONTROL J  &hm RIGHT_ALT K   &hm RIGHT_SHIFT L  &hm RIGHT_GUI SEMI  &kp SINGLE_QUOTE
-&kp LEFT_SHIFT           &kp Z           &kp X                      &kp C                  &kp V                    &kp B                                      &kp LG(LS(S))        &trans                                    &kp N       &kp M                &kp COMMA         &kp DOT            &kp FSLH            &kp RIGHT_SHIFT
-                         &hm_lt 8 GRAVE  &hm_lt 8 LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &hm LEFT_ALT UNDERSCORE              &hm_lt 1 SPACE  &kp BACKSPACE  &trans               &trans     &kp BACKSPACE  &hm_lt 1 ENTER              &hm RIGHT_ALT MINUS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL
+&trans                   &kp N1          &kp N2            &kp N3                 &kp N4                   &kp N5                                                                                                    &kp N6      &kp N7               &kp N8            &kp N9             &kp N0              &bspc_del
+&kp TAB                  &hm LEFT_ALT Q  &kp W             &kp E                  &kp R                    &kp T                                                                                                     &kp Y       &kp U                &kp I             &kp O              &kp P               &kp BSLH
+&mt LEFT_CONTROL ESCAPE  &hm LEFT_GUI A  &hm LEFT_SHIFT S  &hm LEFT_ALT D         &hm LEFT_CONTROL F       &hm_lt 2 G                  &kp DELETE     &kp LC(LA(DEL))      &kp RG(L)  &kp DELETE                     &hm_lt 2 H  &hm RIGHT_CONTROL J  &hm RIGHT_ALT K   &hm RIGHT_SHIFT L  &hm RIGHT_GUI SEMI  &kp SINGLE_QUOTE
+&kp LEFT_SHIFT           &kp Z           &kp X             &kp C                  &kp V                    &kp B                                      &kp LG(LS(S))        &trans                                    &kp N       &kp M                &kp COMMA         &kp DOT            &kp FSLH            &kp RIGHT_SHIFT
+                         &hm_lt 8 GRAVE  &parenbrace       &kp RIGHT_PARENTHESIS  &hm LEFT_ALT UNDERSCORE              &hm_lt 1 SPACE  &kp BACKSPACE  &trans               &trans     &kp BACKSPACE  &hm_lt 1 ENTER              &hm RIGHT_ALT MINUS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL
             >;
         };
 
