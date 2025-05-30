@@ -63,6 +63,15 @@
         };
     };
 
+    macros {
+        arrow: arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp GT>;
+            label = "ARROW";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -91,7 +100,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                                                      &trans     &trans          &trans                &trans                 &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                                                      &kp PLUS   &kp MINUS       &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans      &trans  &trans          &kp EQUAL  &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans
+&trans  &trans  &trans  &trans  &arrow  &trans          &trans  &trans      &trans  &trans          &kp EQUAL  &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &kp GRAVE  &kp TILDE       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans  &trans
         &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans             &trans          &trans                &trans                 &trans
             >;
