@@ -80,7 +80,7 @@
             hold-trigger-on-release;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <250>;
-            bindings = <&mo>, <&arrow>;
+            bindings = <&mo>, <&two_arrows>;
         };
 
         two_arrows: two_arrows {
