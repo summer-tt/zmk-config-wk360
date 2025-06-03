@@ -82,6 +82,15 @@
             require-prior-idle-ms = <250>;
             bindings = <&mo>, <&arrow>;
         };
+
+        two_arrows: two_arrows {
+            compatible = "zmk,behavior-mod-morph";
+            label = "TWO_ARROWS";
+            bindings = <&arrow>, <&single_arrow>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_RCTL|MOD_RSFT|MOD_RALT)>;
+        };
     };
 
     combos {
@@ -99,6 +108,13 @@
             #binding-cells = <0>;
             bindings = <&kp EQUAL &kp GT>;
             label = "ARROW";
+        };
+
+        single_arrow: single_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp GT>;
+            label = "SINGLE_ARROW";
         };
     };
 
