@@ -17,7 +17,7 @@
 
             hold-trigger-on-release;
             quick-tap-ms = <175>;
-            require-prior-idle-ms = <250>;
+            require-prior-idle-ms = <200>;
         };
 
         hm_lt: homerow_mods_lt {
