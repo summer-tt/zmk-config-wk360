@@ -17,7 +17,6 @@
 
             quick-tap-ms = <120>;
             require-prior-idle-ms = <200>;
-            hold-while-undecided;
         };
 
         hm_lt: homerow_mods_lt {
@@ -29,8 +28,6 @@
             quick-tap-ms = <120>;
             require-prior-idle-ms = <200>;
             bindings = <&mo>, <&kp>;
-
-            hold-while-undecided;
         };
 
         bspc_del: backspace_delete {
