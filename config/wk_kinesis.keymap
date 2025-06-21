@@ -11,22 +11,22 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <170>;
+            tapping-term-ms = <160>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
 
-            quick-tap-ms = <120>;
-            require-prior-idle-ms = <150>;
+            quick-tap-ms = <100>;
+            require-prior-idle-ms = <130>;
         };
 
         hm_lt: homerow_mods_lt {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_LT";
             #binding-cells = <2>;
-            tapping-term-ms = <170>;
+            tapping-term-ms = <160>;
             flavor = "balanced";
-            quick-tap-ms = <120>;
-            require-prior-idle-ms = <150>;
+            quick-tap-ms = <100>;
+            require-prior-idle-ms = <130>;
             bindings = <&mo>, <&kp>;
         };
 
@@ -73,11 +73,10 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HM_LT_ARROW";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <160>;
             flavor = "balanced";
-            hold-trigger-on-release;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <250>;
+            quick-tap-ms = <100>;
+            require-prior-idle-ms = <130>;
             bindings = <&mo>, <&two_arrows>;
         };
 
@@ -138,11 +137,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&long_hold LG(L) GRAVE   &kp N1              &kp N2            &kp N3                &kp N4              &kp N5                                                                                                                              &kp N6          &kp N7               &kp N8            &kp N9             &kp N0              &kp BACKSPACE
-&kp TAB                  &hm LEFT_ALT Q      &kp W             &hm LA(LEFT_SHIFT) E  &hm LC(LEFT_ALT) R  &hm LC(LGUI) T                                                                                                                      &hm RC(RGUI) Y  &kp U                &kp I             &kp O              &kp P               &kp BSLH
-&mt LEFT_CONTROL ESCAPE  &hm LEFT_GUI A      &hm LEFT_SHIFT S  &hm LEFT_ALT D        &hm LEFT_CONTROL F  &hm_lt 2 G                      &kp BACKSPACE   &long_hold LC(LA(DELETE)) DELETE      &trans  &trans                                &hm_lt 2 H      &hm RIGHT_CONTROL J  &hm RIGHT_ALT K   &hm RIGHT_SHIFT L  &hm RIGHT_GUI SEMI  &kp SINGLE_QUOTE
-&kp LEFT_SHIFT           &hm LEFT_CONTROL Z  &hm LEFT_ALT X    &hm LEFT_SHIFT C      &hm LEFT_GUI V      &kp B                                           &trans                                &trans                                        &kp N           &kp M                &kp COMMA         &kp DOT            &kp FSLH            &kp GRAVE
-                         &hm_lt_arrow 8 0    &pbrc_left        &pbrc_right           &hm LEFT_ALT EQUAL                  &hm_lt 1 SPACE  &hm_lt 2 ENTER  &long_hold LG(LS(S)) LC(LS(C))        &trans  &kp BACKSPACE  &hm RIGHT_SHIFT ENTER                  &hm RIGHT_ALT MINUS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &hm_lt 8 CAPSLOCK
+&long_hold LG(L) GRAVE   &kp N1              &kp N2            &kp N3                &kp N4              &kp N5                                                                                                                              &kp N6          &kp N7               &kp N8           &kp N9             &kp N0              &kp BACKSPACE
+&kp TAB                  &hm LEFT_ALT Q      &kp W             &hm LA(LEFT_SHIFT) E  &hm LC(LEFT_ALT) R  &hm LC(LGUI) T                                                                                                                      &hm RC(RGUI) Y  &kp U                &kp I            &kp O              &kp P               &kp BSLH
+&mt LEFT_CONTROL ESCAPE  &hm LEFT_GUI A      &hm LEFT_SHIFT S  &hm LEFT_ALT D        &hm LEFT_CONTROL F  &hm_lt 2 G                      &kp BACKSPACE   &long_hold LC(LA(DELETE)) DELETE      &trans  &trans                                &hm_lt 2 H      &hm RIGHT_CONTROL J  &hm RIGHT_ALT K  &hm RIGHT_SHIFT L  &hm RIGHT_GUI SEMI  &kp SINGLE_QUOTE
+&kp LEFT_SHIFT           &hm LEFT_CONTROL Z  &hm LEFT_ALT X    &hm LEFT_SHIFT C      &hm LEFT_GUI V      &kp B                                           &trans                                &trans                                        &kp N           &kp M                &kp COMMA        &kp DOT            &kp FSLH            &kp GRAVE
+                         &hm_lt_arrow 8 0    &trans            &trans                &kp LEFT_ALT                        &hm_lt 1 SPACE  &hm_lt 2 ENTER  &long_hold LG(LS(S)) LC(LS(C))        &trans  &kp BACKSPACE  &hm RIGHT_SHIFT ENTER                  &kp RIGHT_ALT        &trans           &trans             &hm_lt 8 CAPSLOCK
             >;
         };
 
@@ -158,11 +157,11 @@
 
         layer_2 {
             bindings = <
-&trans  &trans     &trans         &trans        &trans                &trans                                                                     &trans     &trans    &trans    &trans    &trans    &trans
-&trans  &trans     &trans         &trans        &trans                &trans                                                                     &trans     &trans    &trans    &trans    &trans    &trans
-&trans  &kp EXCL   &kp AT         &kp HASH      &kp DLLR              &kp PRCNT                      &trans  &trans      &trans  &trans          &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &trans
-&trans  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                  &trans      &trans                  &trans     &trans    &trans    &trans    &trans    &trans
-        &trans     &trans         &trans        &trans                                       &trans  &trans  &trans      &trans  &trans  &trans             &trans    &trans    &trans    &trans
+&trans         &trans    &trans    &trans            &trans             &trans                                                         &trans     &trans     &trans                &trans  &trans  &trans
+&single_arrow  &kp EXCL  &kp AT    &kp HASH          &kp DLLR           &kp PRCNT                                                      &kp PLUS   &kp UNDER  &kp PIPE              &trans  &trans  &trans
+&arrow         &kp LPAR  &kp RPAR  &kp ASTRK         &kp AMPS           &kp CARET          &trans  &trans      &trans  &trans          &kp EQUAL  &kp MINUS  &kp NON_US_BACKSLASH  &trans  &trans  &trans
+&trans         &kp LBRC  &kp RBRC  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PIPE                   &trans      &trans                  &trans     &trans     &trans                &trans  &trans  &trans
+               &trans    &trans    &trans            &trans                        &trans  &trans  &trans      &trans  &trans  &trans             &trans     &trans                &trans  &trans
             >;
         };
 
