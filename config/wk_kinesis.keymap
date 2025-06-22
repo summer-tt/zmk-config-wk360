@@ -168,11 +168,11 @@
 
         layer_2 {
             bindings = <
-&trans                    &trans                 &trans               &trans                       &trans                      &trans                                                         &trans     &trans                   &trans                          &trans           &trans         &trans
-&single_arrow             &kp EXCL               &kp AT               &kp HASH                     &kp DLLR                    &kp PRCNT                                                      &kp PLUS   &kp UNDER                &kp PIPE                        &trans           &trans         &trans
-&hm_arrow LEFT_CONTROL 0  &hm LEFT_GUI LPAR      &hm LEFT_SHIFT RPAR  &hm LEFT_ALT ASTRK           &hm LEFT_CONTROL AMPS       &kp CARET          &trans  &trans      &trans  &trans          &kp EQUAL  &hm RIGHT_CONTROL MINUS  &hm RIGHT_ALT NON_US_BACKSLASH  &kp RIGHT_SHIFT  &kp RIGHT_GUI  &trans
-&trans                    &hm LEFT_CONTROL LBRC  &hm LEFT_ALT RBRC    &hm LEFT_SHIFT LEFT_BRACKET  &hm LEFT_GUI RIGHT_BRACKET  &kp PIPE                   &trans      &trans                  &trans     &trans                   &trans                          &trans           &trans         &trans
-                          &trans                 &trans               &trans                       &trans                                 &trans  &trans  &trans      &trans  &trans  &trans             &trans                   &trans                          &trans           &trans
+&trans                    &trans                 &trans               &trans                       &trans                      &trans                                                         &trans                &trans                   &trans               &trans           &trans         &trans
+&single_arrow             &kp EXCL               &kp AT               &kp HASH                     &kp DLLR                    &kp PRCNT                                                      &kp PIPE              &kp PLUS                 &kp UNDER            &trans           &trans         &trans
+&hm_arrow LEFT_CONTROL 0  &hm LEFT_GUI LPAR      &hm LEFT_SHIFT RPAR  &hm LEFT_ALT ASTRK           &hm LEFT_CONTROL AMPS       &kp CARET          &trans  &trans      &trans  &trans          &kp NON_US_BACKSLASH  &hm RIGHT_CONTROL EQUAL  &hm RIGHT_ALT MINUS  &kp RIGHT_SHIFT  &kp RIGHT_GUI  &trans
+&trans                    &hm LEFT_CONTROL LBRC  &hm LEFT_ALT RBRC    &hm LEFT_SHIFT LEFT_BRACKET  &hm LEFT_GUI RIGHT_BRACKET  &kp PIPE                   &trans      &trans                  &trans                &trans                   &trans               &trans           &trans         &trans
+                          &trans                 &trans               &trans                       &trans                                 &trans  &trans  &trans      &trans  &trans  &trans                        &trans                   &trans               &trans           &trans
             >;
         };
 
