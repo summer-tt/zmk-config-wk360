@@ -176,7 +176,7 @@
         layer_2 {
             bindings = <
 &trans                    &trans             &trans               &trans              &trans                 &trans                                                         &trans  &trans             &trans         &trans           &trans         &trans
-&single_arrow             &kp EXCL           &kp AT               &kp HASH            &kp DLLR               &kp PRCNT                                                      &trans  &trans             &trans         &trans           &trans         &trans
+&single_arrow             &kp EXCL           &kp AT               &kp HASH            &kp DLLR               &kp PRCNT                                                      &trans  &trans             &trans         &trans           &trans         &to 0
 &hm_arrow LEFT_CONTROL 0  &hm LEFT_GUI LPAR  &hm LEFT_SHIFT RPAR  &hm LEFT_ALT ASTRK  &hm LEFT_CONTROL AMPS  &kp CARET          &trans  &trans      &trans  &trans          &trans  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_SHIFT  &kp RIGHT_GUI  &trans
 &trans                    &kp LEFT_CONTROL   &kp LEFT_ALT         &kp LEFT_SHIFT      &kp LEFT_GUI           &trans                     &trans      &trans                  &trans  &trans             &trans         &trans           &trans         &trans
                           &trans             &trans               &trans              &trans                            &trans  &trans  &trans      &trans  &trans  &trans          &trans             &trans         &trans           &trans
