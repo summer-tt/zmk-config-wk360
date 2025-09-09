@@ -165,11 +165,11 @@
 
         layer_1 {
             bindings = <
-&trans                    &kp F11                  &kp F12            &kp F13                &kp F14                 &kp F15                                                                 &kp F6          &kp F7                  &kp F8                  &kp F9                       &kp F10        &trans
-&single_arrow             &kp F1                   &kp F2             &kp F3                 &kp F4                  &kp F5                                                                  &kp HOME        &msc SCRL_DOWN          &msc SCRL_UP            &kp END                      &kp F11        &to 0
-&hm_arrow LEFT_CONTROL 0  &hm LEFT_GUI F6          &hm LEFT_SHIFT F7  &hm LEFT_ALT F8        &hm LEFT_CONTROL F9     &kp F10                 &trans  &trans      &trans  &trans              &kp LEFT_ARROW  &hm RIGHT_CONTROL DOWN  &hm RIGHT_ALT UP_ARROW  &hm RIGHT_SHIFT RIGHT_ARROW  &kp RIGHT_GUI  &trans
-&kp CAPSLOCK              &hm LEFT_CONTROL LA(F4)  &kp TILDE          &hm LEFT_SHIFT DELETE  &hm LEFT_GUI BACKSPACE  &kp LS(INSERT)                  &trans      &trans                      &trans          &kp PAGE_DOWN           &kp PAGE_UP             &trans                       &trans         &trans
-                          &kp LC(LA(DELETE))       &none              &none                  &kp ENTER                               &trans  &trans  &trans      &trans  &kp DELETE  &trans                  &trans                  &trans                  &trans                       &trans
+&trans                    &kp F11                  &kp F12               &kp F13          &kp F14              &kp F15                                                            &kp F6          &kp F7                  &kp F8                  &kp F9                       &kp F10        &trans
+&single_arrow             &kp F1                   &kp F2                &kp F3           &kp F4               &kp F5                                                             &kp HOME        &msc SCRL_DOWN          &msc SCRL_UP            &kp END                      &kp F11        &to 0
+&hm_arrow LEFT_CONTROL 0  &hm LEFT_GUI F6          &hm LEFT_SHIFT F7     &hm LEFT_ALT F8  &hm LEFT_CONTROL F9  &kp F10            &trans  &trans      &trans  &trans              &kp LEFT_ARROW  &hm RIGHT_CONTROL DOWN  &hm RIGHT_ALT UP_ARROW  &hm RIGHT_SHIFT RIGHT_ARROW  &kp RIGHT_GUI  &trans
+&kp CAPSLOCK              &hm LEFT_CONTROL INSERT  &hm LEFT_SHIFT TILDE  &kp DELETE       &kp BACKSPACE        &kp ENTER                  &trans      &trans                      &trans          &kp PAGE_DOWN           &kp PAGE_UP             &trans                       &trans         &trans
+                          &kp LC(LA(DELETE))       &none                 &none            &kp LC(LS(C))                   &trans  &trans  &trans      &trans  &kp DELETE  &trans                  &trans                  &trans                  &trans                       &trans
             >;
         };
 
