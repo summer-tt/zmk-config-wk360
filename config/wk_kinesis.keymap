@@ -77,16 +77,7 @@
             flavor = "balanced";
             quick-tap-ms = <100>;
             require-prior-idle-ms = <130>;
-            bindings = <&mo>, <&two_arrows>;
-        };
-
-        two_arrows: two_arrows {
-            compatible = "zmk,behavior-mod-morph";
-            label = "TWO_ARROWS";
-            bindings = <&arrow>, <&single_arrow>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_RCTL|MOD_RSFT|MOD_RALT)>;
+            bindings = <&mo>, <&none>;
         };
 
         hm_lt_bspc_del: hm_lt_bspc_del {
