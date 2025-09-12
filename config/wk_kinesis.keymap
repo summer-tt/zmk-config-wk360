@@ -138,7 +138,7 @@
             flavor = "balanced";
             quick-tap-ms = <100>;
             require-prior-idle-ms = <130>;
-            bindings = <&ctrl_mo>, <&kp>;
+            bindings = <&mo_ctrl>, <&kp>;
         };
     };
 
@@ -152,14 +152,14 @@
             label = "ARROW";
         };
 
-        two_kp_macro: param_arrow {
+        two_kp: param_arrow {
             compatible = "zmk,behavior-macro-two-param";
             #binding-cells = <2>;
             bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &macro_param_2to1 &kp MACRO_PLACEHOLDER>;
             label = "PARAM_ARROW";
         };
 
-        ctrl_mo: ctrl_mo {
+        mo_ctrl: ctrl_mo {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings = <&macro_param_1to1 &mo MACRO_PLACEHOLDER &kp LCTRL>;
@@ -193,21 +193,21 @@
 
         layer_2 {
             bindings = <
-&to 0                             &trans             &trans               &trans              &trans                 &trans                                                         &trans  &trans  &trans  &trans  &trans  &trans
-&trans                            &kp EXCL           &kp AT               &kp HASH            &kp DLLR               &kp PRCNT                                                      &trans  &trans  &trans  &trans  &trans  &to 0
-&two_kp_macro MINUS GREATER_THAN  &hm LEFT_GUI LPAR  &hm LEFT_SHIFT RPAR  &hm LEFT_ALT ASTRK  &hm LEFT_CONTROL AMPS  &kp CARET          &trans  &trans      &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans                            &trans             &arrow               &trans              &trans                 &trans                     &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                                  &trans             &trans               &trans              &trans                            &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans
+&to 0                       &trans             &trans               &trans              &trans                 &trans                                                         &trans  &trans  &trans  &trans  &trans  &trans
+&trans                      &kp EXCL           &kp AT               &kp HASH            &kp DLLR               &kp PRCNT                                                      &trans  &trans  &trans  &trans  &trans  &to 0
+&two_kp MINUS GREATER_THAN  &hm LEFT_GUI LPAR  &hm LEFT_SHIFT RPAR  &hm LEFT_ALT ASTRK  &hm LEFT_CONTROL AMPS  &kp CARET          &trans  &trans      &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans                      &trans             &arrow               &trans              &trans                 &trans                     &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+                            &trans             &trans               &trans              &trans                            &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans
             >;
         };
 
         layer_3 {
             bindings = <
-&to 0                             &kp F11                  &kp F12                 &kp LC(LS(C))    &kp LS(INSERT)       &kp LC(LA(DELETE))                                                      &trans          &trans                  &trans                  &trans                       &trans         &trans
-&trans                            &kp F6                   &kp F7                  &kp F8           &kp F9               &kp F10                                                                 &kp HOME        &msc SCRL_DOWN          &msc SCRL_UP            &kp END                      &trans         &to 0
-&two_kp_macro MINUS GREATER_THAN  &hm LEFT_GUI F1          &hm LEFT_SHIFT F2       &hm LEFT_ALT F3  &hm LEFT_CONTROL F4  &kp F5                      &trans  &trans      &trans  &trans          &kp LEFT_ARROW  &hm RIGHT_CONTROL DOWN  &hm RIGHT_ALT UP_ARROW  &hm RIGHT_SHIFT RIGHT_ARROW  &kp RIGHT_GUI  &trans
-&kp CAPSLOCK                      &hm LEFT_CONTROL INSERT  &hm_arrow LEFT_SHIFT 0  &kp DELETE       &kp BACKSPACE        &kp ENTER                           &trans      &trans                  &trans          &kp PAGE_DOWN           &kp PAGE_UP             &trans                       &trans         &trans
-                                  &kp LEFT                 &kp UP                  &kp DOWN         &kp RIGHT                                &trans  &trans  &trans      &trans  &trans  &trans                  &trans                  &trans                  &trans                       &trans
+&to 0                       &kp F11                  &kp F12                 &kp LC(LS(C))    &kp LS(INSERT)       &kp LC(LA(DELETE))                                                      &trans          &trans                  &trans                  &trans                       &trans         &trans
+&trans                      &kp F6                   &kp F7                  &kp F8           &kp F9               &kp F10                                                                 &kp HOME        &msc SCRL_DOWN          &msc SCRL_UP            &kp END                      &trans         &to 0
+&two_kp MINUS GREATER_THAN  &hm LEFT_GUI F1          &hm LEFT_SHIFT F2       &hm LEFT_ALT F3  &hm LEFT_CONTROL F4  &kp F5                      &trans  &trans      &trans  &trans          &kp LEFT_ARROW  &hm RIGHT_CONTROL DOWN  &hm RIGHT_ALT UP_ARROW  &hm RIGHT_SHIFT RIGHT_ARROW  &kp RIGHT_GUI  &trans
+&kp CAPSLOCK                &hm LEFT_CONTROL INSERT  &hm_arrow LEFT_SHIFT 0  &kp DELETE       &kp BACKSPACE        &kp ENTER                           &trans      &trans                  &trans          &kp PAGE_DOWN           &kp PAGE_UP             &trans                       &trans         &trans
+                            &kp LEFT                 &kp UP                  &kp DOWN         &kp RIGHT                                &trans  &trans  &trans      &trans  &trans  &trans                  &trans                  &trans                  &trans                       &trans
             >;
         };
 
