@@ -180,21 +180,21 @@
 
         layer_1 {
             bindings = <
-&to 0         &kp F11                   &kp F12                 &kp LC(LS(C))      &kp LC(LA(DELETE))       &none                                                                   &trans     &trans                       &trans                  &trans                            &trans                           &trans
-&trans        &none                     &none                   &none              &none                    &none                                                                   &none      &none                        &none                   &none                             &none                            &trans
-&trans        &hm LEFT_GUI EXCLAMATION  &hm LEFT_SHIFT AT_SIGN  &hm LEFT_ALT HASH  &hm LEFT_CONTROL DOLLAR  &kp PERCENT          &trans  &trans      &trans  &trans                 &kp CARET  &hm RIGHT_CONTROL AMPERSAND  &hm RIGHT_ALT ASTERISK  &hm RIGHT_SHIFT LEFT_PARENTHESIS  &hm RIGHT_WIN RIGHT_PARENTHESIS  &trans
-&kp CAPSLOCK  &kp LEFT_BRACKET          &kp RIGHT_BRACKET       &kp LEFT_BRACE     &kp RIGHT_BRACE          &none                        &trans      &trans                         &none      &none                        &kp LESS_THAN           &kp GREATER_THAN                  &kp QUESTION                     &trans
-              &trans                    &trans                  &trans             &trans                                &trans  &trans  &trans      &trans  &trans  &kp LG(SPACE)             &trans                       &trans                  &trans                            &trans
+&to 0       &kp F11                   &kp F12                 &kp LC(LS(C))      &kp LC(LA(DELETE))       &none                                                                   &trans     &trans                       &trans                  &trans                            &trans                           &trans
+&trans      &none                     &none                   &none              &none                    &none                                                                   &none      &none                        &none                   &none                             &none                            &trans
+&trans      &hm LEFT_GUI EXCLAMATION  &hm LEFT_SHIFT AT_SIGN  &hm LEFT_ALT HASH  &hm LEFT_CONTROL DOLLAR  &kp PERCENT          &trans  &trans      &trans  &trans                 &kp CARET  &hm RIGHT_CONTROL AMPERSAND  &hm RIGHT_ALT ASTERISK  &hm RIGHT_SHIFT LEFT_PARENTHESIS  &hm RIGHT_GUI RIGHT_PARENTHESIS  &trans
+&kp INSERT  &none                     &none                   &none              &none                    &none                        &trans      &trans                         &none      &none                        &none                   &none                             &none                            &trans
+            &trans                    &trans                  &trans             &trans                                &trans  &trans  &trans      &trans  &trans  &kp LG(SPACE)             &trans                       &trans                  &trans                            &trans
             >;
         };
 
         layer_2 {
             bindings = <
-&to 0       &kp F11                  &kp F12                  &kp LC(LS(C))             &kp LC(LA(DELETE))   &none                                                          &trans          &trans                  &trans                  &trans                       &trans         &trans
-&trans      &kp F6                   &kp F7                   &kp F8                    &kp F9               &kp F10                                                        &kp HOME        &msc SCRL_DOWN          &msc SCRL_UP            &kp END                      &trans         &trans
-&trans      &hm LEFT_GUI F1          &hm LEFT_SHIFT F2        &hm LEFT_ALT F3           &hm LEFT_CONTROL F4  &kp F5             &trans  &trans      &trans  &trans          &kp LEFT_ARROW  &hm RIGHT_CONTROL DOWN  &hm RIGHT_ALT UP_ARROW  &hm RIGHT_SHIFT RIGHT_ARROW  &kp RIGHT_GUI  &trans
-&kp INSERT  &hm LEFT_CONTROL DELETE  &hm LEFT_ALT LS(INSERT)  &hm LEFT_SHIFT LC(LS(C))  &hm LWIN BACKSPACE   &kp ENTER                  &trans      &trans                  &trans          &kp PAGE_DOWN           &kp PAGE_UP             &trans                       &trans         &trans
-            &kp LEFT                 &kp UP                   &kp DOWN                  &kp RIGHT                       &trans  &trans  &trans      &trans  &trans  &trans                  &trans                  &trans                  &trans                       &trans
+&to 0         &kp F11                  &kp F12                  &kp LC(LS(C))             &kp LC(LA(DELETE))   &none                                                          &trans          &trans                  &trans                  &trans                       &trans         &trans
+&trans        &kp F6                   &kp F7                   &kp F8                    &kp F9               &kp F10                                                        &kp HOME        &msc SCRL_DOWN          &msc SCRL_UP            &kp END                      &trans         &trans
+&trans        &hm LEFT_GUI F1          &hm LEFT_SHIFT F2        &hm LEFT_ALT F3           &hm LEFT_CONTROL F4  &kp F5             &trans  &trans      &trans  &trans          &kp LEFT_ARROW  &hm RIGHT_CONTROL DOWN  &hm RIGHT_ALT UP_ARROW  &hm RIGHT_SHIFT RIGHT_ARROW  &kp RIGHT_GUI  &trans
+&kp CAPSLOCK  &hm LEFT_CONTROL DELETE  &hm LEFT_ALT LS(INSERT)  &hm LEFT_SHIFT LC(LS(C))  &hm LWIN BACKSPACE   &kp ENTER                  &trans      &trans                  &trans          &kp PAGE_DOWN           &kp PAGE_UP             &trans                       &trans         &trans
+              &kp LEFT                 &kp UP                   &kp DOWN                  &kp RIGHT                       &trans  &trans  &trans      &trans  &trans  &trans                  &trans                  &trans                  &trans                       &trans
             >;
         };
 
