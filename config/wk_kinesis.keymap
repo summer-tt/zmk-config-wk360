@@ -286,5 +286,10 @@
             if-layers = <3>;
             then-layer = <2>;
         };
+
+        layer_4_and_2 {
+            if-layers = <4>;
+            then-layer = <2>;
+        };
     };
 };
