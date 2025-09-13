@@ -200,11 +200,11 @@
 
         layer_3 {
             bindings = <
-&to 0   &trans  &trans        &trans        &trans        &trans                                                      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans                                                      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans          &trans  &trans      &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans        &kp NUMBER_0  &kp PERIOD            &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans
+&to 0   &trans  &trans        &trans        &trans        &trans                                                         &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans                                                         &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans             &trans  &trans      &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ENTER                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans        &kp NUMBER_0  &kp PERIOD               &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans
             >;
         };
 
@@ -276,6 +276,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        L2L1 {
+            if-layers = <2>;
+            then-layer = <1>;
         };
     };
 };
