@@ -190,11 +190,11 @@
 
         layer_2 {
             bindings = <
-&to 0                       &trans             &trans               &trans              &trans                 &trans                                                         &trans  &trans  &trans  &trans  &trans  &trans
-&trans                      &kp EXCL           &kp AT               &kp HASH            &kp DLLR               &kp PRCNT                                                      &trans  &trans  &trans  &trans  &trans  &to 0
-&two_kp MINUS GREATER_THAN  &hm LEFT_GUI LPAR  &hm LEFT_SHIFT RPAR  &hm LEFT_ALT ASTRK  &hm LEFT_CONTROL AMPS  &kp CARET          &trans  &trans      &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans                      &trans             &arrow               &trans              &trans                 &trans                     &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                            &trans             &trans               &trans              &trans                            &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans
+&to 0                       &trans             &trans               &trans              &trans                 &trans                                                                          &trans  &trans  &trans  &trans  &trans  &trans
+&trans                      &kp EXCL           &kp AT               &kp HASH            &kp DLLR               &kp PRCNT                                                                       &trans  &trans  &trans  &trans  &trans  &to 0
+&two_kp MINUS GREATER_THAN  &hm LEFT_GUI LPAR  &hm LEFT_SHIFT RPAR  &hm LEFT_ALT ASTRK  &hm LEFT_CONTROL AMPS  &kp CARET                           &trans  &trans      &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans                      &kp LEFT_BRACKET   &kp RIGHT_BRACKET    &kp LEFT_BRACE      &kp RIGHT_BRACE        &two_kp EQUAL GREATER_THAN                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+                            &trans             &trans               &trans              &trans                                             &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans
             >;
         };
 
