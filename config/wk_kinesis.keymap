@@ -180,11 +180,11 @@
 
         layer_1 {
             bindings = <
-&to 0                       &kp F11                   &kp F12                 &kp LC(LS(C))      &trans                   &trans                                                                  &trans         &trans                       &trans                  &trans                            &trans                           &trans
-&trans                      &kp LEFT_BRACE            &kp RIGHT_BRACE         &kp PLUS           &kp MINUS                &kp GRAVE                                                               &kp TILDE      &kp UNDERSCORE               &kp EQUAL               &kp LEFT_BRACKET                  &kp RIGHT_BRACKET                &trans
-&two_kp MINUS GREATER_THAN  &hm LEFT_GUI EXCLAMATION  &hm LEFT_SHIFT AT_SIGN  &hm LEFT_ALT HASH  &hm LEFT_CONTROL DOLLAR  &kp PERCENT          &trans  &trans      &trans  &trans                 &kp CARET      &hm RIGHT_CONTROL AMPERSAND  &hm RIGHT_ALT ASTERISK  &hm RIGHT_SHIFT LEFT_PARENTHESIS  &hm RIGHT_WIN RIGHT_PARENTHESIS  &trans
-&kp CAPSLOCK                &kp LEFT_BRACKET          &kp RIGHT_BRACKET       &kp LEFT_BRACE     &kp RIGHT_BRACE          &none                        &trans      &trans                         &kp BACKSLASH  &kp PIPE                     &kp LESS_THAN           &kp GREATER_THAN                  &kp QUESTION                     &trans
-                            &trans                    &trans                  &trans             &trans                                &trans  &trans  &trans      &trans  &trans  &kp LG(SPACE)                 &trans                       &trans                  &trans                            &trans
+&to 0         &kp F11                   &kp F12                 &kp LC(LS(C))      &trans                   &trans                                                                       &trans             &trans                       &trans                  &trans                            &trans                           &trans
+&trans        &none                     &kp BACKSLASH           &kp PLUS           &kp MINUS                &kp SINGLE_QUOTE                                                             &kp DOUBLE_QUOTES  &kp UNDERSCORE               &kp EQUAL               &kp TILDE                         &none                            &trans
+&trans        &hm LEFT_GUI EXCLAMATION  &hm LEFT_SHIFT AT_SIGN  &hm LEFT_ALT HASH  &hm LEFT_CONTROL DOLLAR  &kp PERCENT               &trans  &trans      &trans  &trans                 &kp CARET          &hm RIGHT_CONTROL AMPERSAND  &hm RIGHT_ALT ASTERISK  &hm RIGHT_SHIFT LEFT_PARENTHESIS  &hm RIGHT_WIN RIGHT_PARENTHESIS  &trans
+&kp CAPSLOCK  &kp LEFT_BRACKET          &kp RIGHT_BRACKET       &kp LEFT_BRACE     &kp RIGHT_BRACE          &none                             &trans      &trans                         &kp GRAVE          &kp PIPE                     &kp LESS_THAN           &kp GREATER_THAN                  &kp QUESTION                     &trans
+              &trans                    &trans                  &trans             &trans                                     &trans  &trans  &trans      &trans  &trans  &kp LG(SPACE)                     &trans                       &trans                  &trans                            &trans
             >;
         };
 
