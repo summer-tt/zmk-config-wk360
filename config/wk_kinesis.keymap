@@ -296,5 +296,10 @@
             if-layers = <6>;
             then-layer = <1>;
         };
+
+        layer_2_and_1 {
+            if-layers = <2>;
+            then-layer = <1>;
+        };
     };
 };
