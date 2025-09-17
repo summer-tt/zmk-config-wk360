@@ -132,26 +132,26 @@
             bindings = <&mo_ctrl>, <&kp>;
         };
 
-        hm_lt_alt: hm_lt_alt {
+        hm_mo_ctrl_shift_super: hm_mo_ctrl_shift_super {
             compatible = "zmk,behavior-hold-tap";
-            label = "HM_LT_ALT";
+            label = "HM_MO_CTRL_SHIFT_SUPER";
             #binding-cells = <2>;
             tapping-term-ms = <160>;
             flavor = "balanced";
             quick-tap-ms = <100>;
             require-prior-idle-ms = <130>;
-            bindings = <&mo_alt>, <&kp>;
+            bindings = <&mo_ctrl_shift_super>, <&kp>;
         };
 
-        hm_lt_shift: hm_lt_shift {
+        hm_mo_ctrl_alt_super: hm_mo_ctrl_alt_super {
             compatible = "zmk,behavior-hold-tap";
-            label = "HM_LT_SHIFT";
+            label = "HM_MO_CTRL_ALT_SUPER";
             #binding-cells = <2>;
             tapping-term-ms = <160>;
             flavor = "balanced";
             quick-tap-ms = <100>;
             require-prior-idle-ms = <130>;
-            bindings = <&mo_shift>, <&kp>;
+            bindings = <&mo_ctrl_alt_super>, <&kp>;
         };
     };
 
@@ -244,11 +244,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&to 10                   &kp N1                 &kp N2             &kp N3                &kp N4                          &kp N5                                                                                               &kp N6          &kp N7               &kp N8          &kp N9             &kp N0                &kp BACKSPACE
-&kp TAB                  &hm_lt_ctrl 5 Q        &kp W              &kp E                 &hm_lt_shift 7 R                &hm_lt_alt 7 T                                                                                       &hm_lt_alt 7 Y  &hm_lt_shift 7 U     &kp I           &kp O              &kp P                 &kp BACKSLASH
-&mt LEFT_CONTROL ESCAPE  &hm LEFT_WIN A         &hm LEFT_SHIFT S   &hm LEFT_ALT D        &hm LEFT_CONTROL F              &hm_lt 3 G                      &kp LEFT_ALT       &none      &trans  &kp RIGHT_ALT                  &hm_lt 3 H      &hm RIGHT_CONTROL J  &hm LEFT_ALT K  &hm RIGHT_SHIFT L  &hm RIGHT_GUI SEMI    &kp SINGLE_QUOTE
-&kp LEFT_SHIFT           &hm LEFT_CONTROL Z     &hm LEFT_ALT X     &hm LEFT_SHIFT C      &hm LEFT_GUI V                  &kp B                                              &none      &trans                                 &kp N           &kp M                &kp COMMA       &kp DOT            &kp FSLH              &kp GRAVE
-                         &hm_lt 8 LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &hm LEFT_ALT RIGHT_PARENTHESIS                  &hm_lt 2 SPACE  &hm_lt 6 LEFT_WIN  &none      &trans  &kp RIGHT_WIN  &hm_lt 2 ENTER                  &hm RIGHT_ALT MINUS  &kp EQUAL       &kp LEFT_BRACE     &hm_lt 8 RIGHT_BRACE
+&to 10                   &kp N1                 &kp N2             &kp N3                &kp N4                          &kp N5                                                                                                            &kp N6                       &kp N7                     &kp N8          &kp N9             &kp N0                &kp BACKSPACE
+&kp TAB                  &hm_lt_ctrl 5 Q        &kp W              &kp E                 &hm_mo_ctrl_alt_super 7 R       &hm_mo_ctrl_shift_super 7 T                                                                                       &hm_mo_ctrl_shift_super 7 Y  &hm_mo_ctrl_alt_super 7 U  &kp I           &kp O              &kp P                 &kp BACKSLASH
+&mt LEFT_CONTROL ESCAPE  &hm LEFT_WIN A         &hm LEFT_SHIFT S   &hm LEFT_ALT D        &hm LEFT_CONTROL F              &hm_lt 3 G                                   &kp LEFT_ALT       &none      &trans  &kp RIGHT_ALT                  &hm_lt 3 H                   &hm RIGHT_CONTROL J        &hm LEFT_ALT K  &hm RIGHT_SHIFT L  &hm RIGHT_GUI SEMI    &kp SINGLE_QUOTE
+&kp LEFT_SHIFT           &hm LEFT_CONTROL Z     &hm LEFT_ALT X     &hm LEFT_SHIFT C      &hm LEFT_GUI V                  &kp B                                                           &none      &trans                                 &kp N                        &kp M                      &kp COMMA       &kp DOT            &kp FSLH              &kp GRAVE
+                         &hm_lt 8 LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &hm LEFT_ALT RIGHT_PARENTHESIS                               &hm_lt 2 SPACE  &hm_lt 6 LEFT_WIN  &none      &trans  &kp RIGHT_WIN  &hm_lt 2 ENTER                               &hm RIGHT_ALT MINUS        &kp EQUAL       &kp LEFT_BRACE     &hm_lt 8 RIGHT_BRACE
             >;
         };
 
@@ -314,11 +314,11 @@
 
         layer_7 {
             bindings = <
-&to 0   &trans  &trans  &trans  &trans     &trans                                                      &trans     &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &kp LG(R)  &trans                                                      &trans     &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &kp LG(F)  &trans          &trans  &trans      &trans  &trans          &kp LG(H)  &kp LG(J)  &kp LG(K)  &kp LG(L)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans                  &trans      &trans                  &trans     &trans     &trans     &trans     &trans  &trans
-        &trans  &trans  &trans  &trans             &trans  &trans  &trans      &trans  &trans  &trans             &trans     &trans     &trans     &trans
+&to 0   &trans  &trans  &trans  &trans  &trans                                                      &trans    &trans    &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                      &trans    &trans    &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans      &trans  &trans          &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans    &trans    &trans  &trans     &trans  &trans
+        &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans            &trans    &trans  &trans     &trans
             >;
         };
 
