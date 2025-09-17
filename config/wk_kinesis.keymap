@@ -288,11 +288,11 @@
 
         layer_7 {
             bindings = <
-&to 0   &trans  &trans  &trans  &trans  &trans                                                      &trans        &trans        &trans            &trans         &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                      &trans        &trans        &trans            &trans         &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans      &trans  &trans          &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(UP_ARROW)  &kp LC(RIGHT)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans        &trans        &trans            &trans         &trans  &trans
-        &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans                &trans        &trans            &trans         &trans
+&to 0   &trans  &trans  &trans  &trans     &trans                                                      &trans     &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &kp LG(R)  &trans                                                      &trans     &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &kp LG(F)  &trans          &trans  &trans      &trans  &trans          &kp LG(H)  &kp LG(J)  &kp LG(K)  &kp LG(L)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans                  &trans      &trans                  &trans     &trans     &trans     &trans     &trans  &trans
+        &trans  &trans  &trans  &trans             &trans  &trans  &trans      &trans  &trans  &trans             &trans     &trans     &trans     &trans
             >;
         };
 
