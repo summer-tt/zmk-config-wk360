@@ -247,7 +247,7 @@
 &to 10                   &kp N1                 &kp N2             &kp N3                       &kp N4                          &kp N5                                                                                                                   &kp N6      &kp N7                     &kp N8                       &kp N9             &kp N0                &kp BACKSPACE
 &kp TAB                  &hm_lt_ctrl 5 Q        &kp W              &hm_mo_ctrl_shift_super 7 E  &hm_mo_ctrl_alt_super 7 R       &kp T                                                                                                                    &kp Y       &hm_mo_ctrl_alt_super 7 U  &hm_mo_ctrl_shift_super 7 I  &kp O              &kp P                 &kp BACKSLASH
 &mt LEFT_CONTROL ESCAPE  &hm LEFT_WIN A         &hm LEFT_SHIFT S   &hm LEFT_ALT D               &hm LEFT_CONTROL F              &hm_lt 3 G                  &kp LC(LA(LGUI))   &kp LC(LS(LGUI))      &kp RC(RS(RGUI))  &kp RC(RA(RWIN))                  &hm_lt 3 H  &hm RIGHT_CONTROL J        &hm LEFT_ALT K               &hm RIGHT_SHIFT L  &hm RIGHT_GUI SEMI    &kp SINGLE_QUOTE
-&kp LEFT_SHIFT           &hm LEFT_CONTROL Z     &hm LEFT_ALT X     &hm LEFT_SHIFT C             &hm LEFT_GUI V                  &kp B                                          &none                 &trans                                              &kp N       &kp M                      &kp COMMA                    &kp DOT            &kp FSLH              &kp GRAVE
+&kp LEFT_SHIFT           &hm LEFT_CONTROL Z     &hm LEFT_ALT X     &hm LEFT_SHIFT C             &hm LEFT_GUI V                  &kp B                                          &none                 &trans                                              &hm_lt 4 N  &kp M                      &kp COMMA                    &kp DOT            &kp FSLH              &kp GRAVE
                          &hm_lt 8 LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS         &hm LEFT_ALT RIGHT_PARENTHESIS              &hm_lt 2 SPACE  &hm_lt 6 LEFT_WIN  &none                 &trans            &hm_lt 6 RGUI     &hm_lt 2 ENTER              &hm LALT MINUS             &kp EQUAL                    &kp LEFT_BRACE     &hm_lt 8 RIGHT_BRACE
             >;
         };
@@ -286,8 +286,8 @@
             bindings = <
 &to 0   &trans  &trans        &trans        &trans        &trans                                                         &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans                                                         &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans             &trans  &trans      &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ENTER                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ENTER          &trans  &trans      &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans                     &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
         &trans  &trans        &kp NUMBER_0  &kp PERIOD               &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans
             >;
         };
@@ -355,16 +355,6 @@
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
-
-        layer_3_and_1 {
-            if-layers = <3>;
-            then-layer = <1>;
-        };
-
-        layer_4_and_1 {
-            if-layers = <4>;
-            then-layer = <1>;
-        };
 
         layer_6_and_1 {
             if-layers = <6>;
