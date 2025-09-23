@@ -155,7 +155,19 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        ampersand {
+            bindings = <&kt AMPERSAND>;
+            key-positions = <29 35>;
+        };
+
+        at_sign {
+            bindings = <&kp AT_SIGN>;
+            key-positions = <34 26>;
+        };
+    };
 
     macros {
         arrow: arrow {
