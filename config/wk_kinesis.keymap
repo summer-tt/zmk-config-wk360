@@ -244,14 +244,24 @@
             display-name = "Base";
             bindings = <
 &to 10                   &kp N1                 &kp N2             &kp N3                       &kp N4                          &kp N5                                                                                                                   &kp N6      &kp N7                     &kp N8                       &kp N9             &kp N0                &kp BACKSPACE
-&kp TAB                  &hm_lt_ctrl 4 Q        &kp W              &hm_mo_ctrl_shift_super 9 E  &hm_mo_ctrl_alt_super 9 R       &hm_lt 9 T                                                                                                               &kp Y       &hm_mo_ctrl_alt_super 9 U  &hm_mo_ctrl_shift_super 9 I  &kp O              &kp P                 &kp BACKSLASH
-&mt LEFT_CONTROL ESCAPE  &hm LEFT_WIN A         &hm LEFT_SHIFT S   &hm LEFT_ALT D               &hm LEFT_CONTROL F              &hm_lt 3 G                  &kp LGUI           &kp LC(LS(LGUI))      &kp RC(RS(RGUI))  &kp RC(RA(RWIN))                  &hm_lt 3 H  &hm RIGHT_CONTROL J        &hm LEFT_ALT K               &hm RIGHT_SHIFT L  &hm RIGHT_GUI SEMI    &kp SINGLE_QUOTE
+&kp TAB                  &hm_lt_ctrl 5 Q        &kp W              &hm_mo_ctrl_shift_super 9 E  &hm_mo_ctrl_alt_super 9 R       &hm_lt 9 T                                                                                                               &kp Y       &hm_mo_ctrl_alt_super 9 U  &hm_mo_ctrl_shift_super 9 I  &kp O              &kp P                 &kp BACKSLASH
+&mt LEFT_CONTROL ESCAPE  &hm LEFT_WIN A         &hm LEFT_SHIFT S   &hm LEFT_ALT D               &hm LEFT_CONTROL F              &hm_lt 4 G                  &kp LGUI           &kp LC(LS(LGUI))      &kp RC(RS(RGUI))  &kp RC(RA(RWIN))                  &hm_lt 4 H  &hm RIGHT_CONTROL J        &hm LEFT_ALT K               &hm RIGHT_SHIFT L  &hm RIGHT_GUI SEMI    &kp SINGLE_QUOTE
 &kp LEFT_SHIFT           &hm LEFT_CONTROL Z     &hm LEFT_ALT X     &hm LEFT_SHIFT C             &hm LEFT_GUI V                  &kp B                                          &none                 &trans                                              &kp N       &kp M                      &kp COMMA                    &kp DOT            &kp FSLH              &kp GRAVE
-                         &hm_lt 9 LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS         &hm LEFT_ALT RIGHT_PARENTHESIS              &hm_lt 2 SPACE  &hm_lt 7 LEFT_WIN  &none                 &trans            &hm_lt 7 RGUI     &hm_lt 2 ENTER              &hm LALT MINUS             &kp EQUAL                    &kp LEFT_BRACE     &hm_lt 9 RIGHT_BRACE
+                         &hm_lt 9 LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS         &hm LEFT_ALT RIGHT_PARENTHESIS              &hm_lt 3 SPACE  &hm_lt 7 LEFT_WIN  &none                 &trans            &hm_lt 7 RGUI     &hm_lt 3 ENTER              &hm LALT MINUS             &kp EQUAL                    &kp LEFT_BRACE     &hm_lt 9 RIGHT_BRACE
             >;
         };
 
         layer_1 {
+            bindings = <
+&to 0   &trans        &trans       &trans     &trans                  &trans                                                                &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp Q         &kp W        &kp E      &trans                  &trans                                                                &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp A         &kp S        &kp D      &trans                  &trans                  &kp CAPS  &trans      &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans       &trans     &trans                  &trans                            &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+        &kp KP_MINUS  &kp KP_PLUS  &kp TILDE  &hm LEFT_ALT BACKSLASH          &hm_lt 7 SPACE  &mo 6     &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_2 {
             bindings = <
 &to 0           &kp F11                       &kp F12                 &kp LC(LA(DELETE))        &trans               &trans                                                         &kp F6          &kp F7                  &kp F8                  &kp F9                       &kp F10        &trans
 &trans          &kp F6                        &kp F7                  &kp F8                    &kp F9               &kp F10                                                        &kp HOME        &kp PRINTSCREEN         &kp INSERT              &kp END                      &trans         &trans
@@ -261,7 +271,7 @@
             >;
         };
 
-        layer_2 {
+        layer_3 {
             bindings = <
 &trans  &trans           &trans                    &trans                  &trans                  &trans                                                      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp F11          &kp F2                    &kp F3                  &kp F4                  &kp F1                                                      &trans  &trans  &trans  &trans  &trans  &trans
@@ -271,7 +281,7 @@
             >;
         };
 
-        layer_3 {
+        layer_4 {
             bindings = <
 &to 0                       &trans                    &trans                  &trans             &trans                   &trans                                                           &trans     &trans                       &trans                  &trans                &trans          &trans
 &two_kp EQUAL GREATER_THAN  &none                     &none                   &none              &none                    &none                                                            &none      &none                        &none                   &none                 &none           &kp PIPE
@@ -281,23 +291,13 @@
             >;
         };
 
-        layer_4 {
+        layer_5 {
             bindings = <
 &to 0   &trans  &trans  &trans  &trans  &trans                                                       &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &kp U   &kp Y   &kp TAB                                                      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &kp D   &kp E   &kp Z            &trans  &trans      &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                   &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans           &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans
-            >;
-        };
-
-        layer_5 {
-            bindings = <
-&to 0   &trans        &trans       &trans     &trans                  &trans                                                                &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp Q         &kp W        &kp E      &trans                  &trans                                                                &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp A         &kp S        &kp D      &trans                  &trans                  &kp CAPS  &trans      &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans       &trans     &trans                  &trans                            &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-        &kp KP_MINUS  &kp KP_PLUS  &kp TILDE  &hm LEFT_ALT BACKSLASH          &hm_lt 7 SPACE  &mo 6     &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans
             >;
         };
 
@@ -357,12 +357,12 @@
 
         layer_7_and_1 {
             if-layers = <7>;
-            then-layer = <1>;
+            then-layer = <2>;
         };
 
         layer_2_and_1 {
-            if-layers = <2>;
-            then-layer = <1>;
+            if-layers = <3>;
+            then-layer = <2>;
         };
     };
 };
