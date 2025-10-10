@@ -253,11 +253,11 @@
 
         layer_1 {
             bindings = <
-&to 10  &trans        &trans       &trans     &trans                  &trans                                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp Q         &kp W        &kp E      &kp R                   &trans                                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp A         &kp S        &kp D      &trans                  &trans                  &kp N0  &trans            &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans       &trans     &trans                  &trans                          &trans            &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-        &kp KP_MINUS  &kp KP_PLUS  &kp TILDE  &hm LEFT_ALT BACKSLASH          &hm_lt 7 SPACE  &mo 6   &kp CAPSLOCK      &trans  &trans  &trans          &trans  &trans  &trans  &trans
+&to 10  &trans  &trans  &trans  &trans          &trans                                                                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp Q   &kp W   &kp E   &kp R           &kp T                                                                     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp A   &kp S   &kp D   &hm LCTRL F     &kp G                   &kp N0  &trans            &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp Z   &kp X   &kp C   &hm LEFT_ALT V  &kp B                           &trans            &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+        &kp L   &kp K   &kp I   &kp P                   &hm_lt 6 SPACE  &kp F5  &kp CAPSLOCK      &trans  &trans  &trans          &trans  &trans  &trans  &trans
             >;
         };
 
@@ -303,11 +303,11 @@
 
         layer_6 {
             bindings = <
-&to 10  &trans  &trans  &trans  &trans  &trans                                                      &trans  &trans        &trans        &trans        &trans  &trans
-&trans  &trans  &kp N7  &kp N8  &kp N9  &trans                                                      &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &trans
-&trans  &trans  &kp N4  &kp N5  &kp N6  &trans          &trans  &trans      &trans  &trans          &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
-&trans  &trans  &kp N1  &kp N2  &kp N3  &trans                  &trans      &trans                  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
-        &trans  &trans  &kp N0  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &none         &kp NUMBER_0  &kp PERIOD    &trans
+&to 10  &trans        &trans       &trans     &trans         &trans                                                      &trans  &trans        &trans        &trans        &trans  &trans
+&trans  &kp F10       &kp F9       &kp F8     &kp F7         &kp F6                                                      &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &trans
+&kp N0  &kp F1        &kp F2       &kp F3     &kp F4         &kp F5          &trans  &trans      &trans  &trans          &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
+&trans  &kp N1        &kp N2       &kp N3     &kp N4         &kp N5                  &trans      &trans                  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
+        &kp KP_MINUS  &kp KP_PLUS  &kp TILDE  &kp BACKSPACE          &trans  &trans  &trans      &trans  &trans  &trans          &none         &kp NUMBER_0  &kp PERIOD    &trans
             >;
         };
 
