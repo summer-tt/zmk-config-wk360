@@ -293,11 +293,11 @@
 
         layer_5 {
             bindings = <
-&to 10                      &trans                    &trans                  &trans             &trans                   &trans                                                           &trans     &trans                       &trans                  &trans                &trans          &trans
-&two_kp EQUAL GREATER_THAN  &none                     &none                   &none              &none                    &none                                                            &none      &none                        &none                   &none                 &none           &kp PIPE
-&trans                      &hm LEFT_GUI EXCLAMATION  &hm LEFT_SHIFT AT_SIGN  &hm LEFT_ALT HASH  &hm LEFT_CONTROL DOLLAR  &kp PERCENT          &trans  &trans      &trans  &trans          &kp CARET  &hm RIGHT_CONTROL AMPERSAND  &hm RIGHT_ALT ASTERISK  &hm RIGHT_SHIFT PIPE  &hm RGUI TILDE  &kp DOUBLE_QUOTES
-&trans                      &trans                    &trans                  &trans             &trans                   &trans                       &trans      &trans                  &trans     &trans                       &trans                  &trans                &trans          &kp TILDE
-                            &trans                    &trans                  &trans             &trans                                &trans  &trans  &trans      &trans  &trans  &trans             &trans                       &trans                  &trans                &trans
+&to 10                      &trans             &trans                  &trans             &trans                   &trans                                                           &trans     &trans                       &trans                  &trans                &trans          &trans
+&two_kp EQUAL GREATER_THAN  &none              &none                   &none              &none                    &none                                                            &none      &none                        &none                   &none                 &none           &kp PIPE
+&trans                      &hm LEFT_GUI EXCL  &hm LEFT_SHIFT AT_SIGN  &hm LEFT_ALT HASH  &hm LEFT_CONTROL DOLLAR  &kp PERCENT          &trans  &trans      &trans  &trans          &kp CARET  &hm RIGHT_CONTROL AMPERSAND  &hm RIGHT_ALT ASTERISK  &hm RIGHT_SHIFT PIPE  &hm RGUI TILDE  &kp DOUBLE_QUOTES
+&trans                      &trans             &trans                  &trans             &trans                   &trans                       &trans      &trans                  &trans     &trans                       &trans                  &trans                &trans          &kp TILDE
+                            &trans             &trans                  &trans             &trans                                &trans  &trans  &trans      &trans  &trans  &trans             &trans                       &trans                  &trans                &trans
             >;
         };
 
