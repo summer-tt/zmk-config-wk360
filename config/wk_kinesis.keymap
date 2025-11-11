@@ -243,11 +243,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&hm ESCAPE GRAVE         &kp N1                 &kp N2             &kp N3                         &kp N4                          &kp N5                                                                                                                                            &kp N6      &kp N7                     &kp N8                       &kp N9             &kp N0                  &kp BACKSPACE
-&kp TAB                  &hm_lt_ctrl 6 Q        &kp W              &hm_mo_ctrl_shift_super 9 E    &hm_mo_ctrl_alt_super 9 R       &hm_lt 9 T                                                                                                                                        &kp Y       &hm_mo_ctrl_alt_super 9 U  &hm_mo_ctrl_shift_super 9 I  &kp O              &kp P                   &kp BACKSLASH
-&mt LEFT_CONTROL ESCAPE  &hm LEFT_WIN A         &hm LEFT_SHIFT S   &hm LEFT_ALT D                 &hm LEFT_CONTROL F              &hm_lt 5 G                  &kp LC(LS(LEFT_ALT))  &kp LC(LS(LEFT_COMMAND))      &kp RC(RS(RIGHT_COMMAND))  &kp RC(RS(RIGHT_ALT))                  &hm_lt 5 H  &hm RIGHT_CONTROL J        &hm LEFT_ALT K               &hm RIGHT_SHIFT L  &hm RIGHT_GUI SEMI      &kp SINGLE_QUOTE
-&kp LEFT_SHIFT           &hm LEFT_CONTROL Z     &hm LEFT_ALT X     &hm LEFT_SHIFT C               &hm LEFT_GUI V                  &kp B                                             &none                         &none                                                             &kp N       &hm RIGHT_GUI M            &hm RIGHT_SHIFT COMMA        &hm RIGHT_ALT DOT  &hm RIGHT_CONTROL FSLH  &hm_lt 10 RCTRL
-                         &hm_lt 8 LEFT_BRACKET  &kp RIGHT_BRACKET  &hm LEFT_GUI LEFT_PARENTHESIS  &hm LEFT_ALT RIGHT_PARENTHESIS              &hm_lt 3 SPACE  &mo 5                 &none                         &none                      &mo 5                  &hm_lt 3 ENTER              &hm LALT MINUS             &kp EQUAL                    &kp LEFT_BRACE     &hm_lt 8 RIGHT_BRACE
+&hm ESCAPE GRAVE         &kp N1                 &kp N2             &kp N3                         &kp N4                          &kp N5                                                                                                                                            &kp N6      &kp N7               &kp N8                 &kp N9             &kp N0                  &kp BACKSPACE
+&kp TAB                  &kp Q                  &kp W              &kp E                          &kp R                           &kp T                                                                                                                                             &kp Y       &kp U                &kp I                  &kp O              &kp P                   &kp BACKSLASH
+&mt LEFT_CONTROL ESCAPE  &hm LEFT_WIN A         &hm LEFT_SHIFT S   &hm LEFT_ALT D                 &hm LEFT_CONTROL F              &hm_lt 5 G                  &kp LC(LS(LEFT_ALT))  &kp LC(LS(LEFT_COMMAND))      &kp RC(RS(RIGHT_COMMAND))  &kp RC(RS(RIGHT_ALT))                  &hm_lt 5 H  &hm RIGHT_CONTROL J  &hm LEFT_ALT K         &hm RIGHT_SHIFT L  &hm RIGHT_GUI SEMI      &kp SINGLE_QUOTE
+&kp LEFT_SHIFT           &hm LEFT_CONTROL Z     &hm LEFT_ALT X     &hm LEFT_SHIFT C               &hm LEFT_GUI V                  &kp B                                             &none                         &none                                                             &kp N       &hm RIGHT_GUI M      &hm RIGHT_SHIFT COMMA  &hm RIGHT_ALT DOT  &hm RIGHT_CONTROL FSLH  &hm_lt 10 RCTRL
+                         &hm_lt 8 LEFT_BRACKET  &kp RIGHT_BRACKET  &hm LEFT_GUI LEFT_PARENTHESIS  &hm LEFT_ALT RIGHT_PARENTHESIS              &hm_lt 3 SPACE  &mo 4                 &none                         &none                      &mo 4                  &hm_lt 3 ENTER              &hm LALT MINUS       &kp EQUAL              &kp LEFT_BRACE     &hm_lt 8 RIGHT_BRACE
             >;
         };
 
@@ -273,21 +273,21 @@
 
         layer_3 {
             bindings = <
-&trans        &kp LA(NUMBER_6)      &kp LA(N7)                &kp LA(N8)                &kp LA(N9)              &trans                                                               &trans          &trans                   &trans                   &trans                       &trans             &trans
-&trans        &kp F1                &kp F2                    &kp F3                    &kp F4                  &kp F5                                                               &kp F6          &kp F7                   &kp F8                   &kp F9                       &kp F10            &trans
-&kp CAPSLOCK  &hm LEFT_GUI DEL      &hm LEFT_SHIFT BACKSPACE  &hm LEFT_ALT F3           &hm LEFT_CONTROL ENTER  &kp F5                   &trans  &trans      &trans  &trans          &kp LEFT_ARROW  &hm RIGHT_CONTROL DOWN   &hm RIGHT_ALT UP_ARROW   &hm RIGHT_SHIFT RIGHT_ARROW  &kp RIGHT_GUI      &trans
-&trans        &hm LEFT_CONTROL F11  &hm LEFT_ALT F12          &hm LEFT_SHIFT LC(LS(C))  &hm LWIN INSERT         &kp PRINTSCREEN                  &trans      &trans                  &kp HOME        &hm RIGHT_GUI PAGE_DOWN  &hm RIGHT_SHIFT PAGE_UP  &hm RIGHT_ALT END            &kp RIGHT_CONTROL  &trans
-              &kp LEFT              &kp UP                    &kp DOWN                  &kp RIGHT                                &trans  &trans  &trans      &trans  &trans  &trans                  &trans                   &trans                   &trans                       &trans
+&trans        &kp LC(LS(LA(NUMBER_6)))  &kp LC(LS(LA(N7)))        &kp LC(LS(LA(N8)))        &kp LC(LS(LA(N9)))        &trans                                                                        &trans          &trans                   &trans                   &trans                       &trans             &trans
+&trans        &kp LC(LA(LS(NUMBER_1)))  &kp LC(LS(LA(NUMBER_2)))  &kp LC(LS(LA(NUMBER_3)))  &kp LC(LS(LA(NUMBER_4)))  &kp LC(LS(LA(NUMBER_5)))                                                      &trans          &trans                   &trans                   &trans                       &trans             &trans
+&kp CAPSLOCK  &hm LEFT_GUI DEL          &hm LEFT_SHIFT BACKSPACE  &hm LEFT_ALT F3           &hm LEFT_CONTROL ENTER    &kp F5                            &trans  &trans      &trans  &trans          &kp LEFT_ARROW  &hm RIGHT_CONTROL DOWN   &hm RIGHT_ALT UP_ARROW   &hm RIGHT_SHIFT RIGHT_ARROW  &kp RIGHT_GUI      &trans
+&trans        &hm LEFT_CONTROL F11      &hm LEFT_ALT F12          &hm LEFT_SHIFT LC(LS(C))  &hm LWIN INSERT           &kp PRINTSCREEN                           &trans      &trans                  &kp HOME        &hm RIGHT_GUI PAGE_DOWN  &hm RIGHT_SHIFT PAGE_UP  &hm RIGHT_ALT END            &kp RIGHT_CONTROL  &trans
+              &kp LEFT                  &kp UP                    &kp DOWN                  &kp RIGHT                                           &trans  &trans  &trans      &trans  &trans  &trans                  &trans                   &trans                   &trans                       &trans
             >;
         };
 
         layer_4 {
             bindings = <
-&kp F11  &kp F1                &kp F2                    &kp F3                    &kp F4                  &kp F5                                                      &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F12
-&trans   &kp F1                &kp F2                    &kp F3                    &kp F4                  &kp F5                                                      &trans  &trans  &trans  &trans  &trans   &trans
-&trans   &hm LGUI DELETE       &hm LEFT_SHIFT BACKSPACE  &hm LEFT_ALT LC(ENTER)    &hm LEFT_CONTROL ENTER  &kp F5          &trans  &trans      &trans  &trans          &trans  &trans  &trans  &trans  &trans   &trans
-&trans   &hm LEFT_CONTROL F11  &hm LEFT_ALT F12          &hm LEFT_SHIFT LC(LS(C))  &hm LEFT_GUI INSERT     &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans   &trans
-         &trans                &trans                    &trans                    &trans                          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans
+&trans  &trans                &trans             &trans           &trans               &trans                                                       &trans  &trans                &trans            &trans              &trans             &trans
+&trans  &kp F6                &kp F7             &kp F8           &kp F9               &kp F10                                                      &trans  &trans                &trans            &trans              &trans             &trans
+&trans  &hm LGUI F1           &hm LEFT_SHIFT F2  &hm LEFT_ALT F3  &hm LEFT_CONTROL F4  &kp F5           &trans  &trans      &trans  &trans          &kp F6  &hm RIGHT_CONTROL F7  &hm RIGHT_ALT F8  &hm RIGHT_SHIFT F9  &hm RIGHT_GUI F10  &trans
+&trans  &hm LEFT_CONTROL F11  &hm LEFT_ALT F12   &trans           &trans               &trans                   &trans      &trans                  &trans  &trans                &trans            &trans              &trans             &trans
+        &trans                &trans             &trans           &trans                        &trans  &trans  &trans      &trans  &trans  &trans          &trans                &trans            &trans              &trans
             >;
         };
 
@@ -303,11 +303,11 @@
 
         layer_6 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                                       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp U   &kp Y   &kp TAB                                                      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp D   &kp E   &kp Z            &trans  &trans      &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                   &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans           &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans      &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans
             >;
         };
 
@@ -362,12 +362,5 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        layer_7_and_3 {
-            if-layers = <7>;
-            then-layer = <3>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
