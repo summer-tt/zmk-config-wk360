@@ -152,6 +152,18 @@
             require-prior-idle-ms = <130>;
             bindings = <&mo_ctrl_alt_super>, <&kp>;
         };
+
+        hm_left_parenthesis: hm_left_parenthesis {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HM_LEFT_PARENTHESIS";
+            #binding-cells = <2>;
+            tapping-term-ms = <160>;
+            flavor = "balanced";
+            bindings = <&kp>, <&left_parenthesis>;
+
+            quick-tap-ms = <100>;
+            require-prior-idle-ms = <130>;
+        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -244,7 +256,8 @@
                 <&kp LEFT_SHIFT &kp N9>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&kp LEFT_SHIFT &kp N9>;
+                <&kp LEFT_SHIFT &kp N9>,
+                <&macro_press>;
 
             label = "LEFT_PARENTHESIS";
         };
@@ -256,11 +269,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&hm ESCAPE GRAVE         &kp N1                 &kp N2             &kp N3                         &kp N4                          &kp N5                                                                                                                                            &kp N6      &kp N7               &kp N8                 &kp N9             &kp N0                  &kp BACKSPACE
-&kp TAB                  &kp Q                  &kp W              &kp E                          &kp R                           &kp T                                                                                                                                             &kp Y       &kp U                &kp I                  &kp O              &kp P                   &kp BACKSLASH
-&mt LEFT_CONTROL ESCAPE  &hm LEFT_WIN A         &hm LEFT_SHIFT S   &hm LEFT_ALT D                 &hm LEFT_CONTROL F              &hm_lt 5 G                  &kp LC(LS(LEFT_ALT))  &kp LC(LS(LEFT_COMMAND))      &kp RC(RS(RIGHT_COMMAND))  &kp RC(RS(RIGHT_ALT))                  &hm_lt 5 H  &hm RIGHT_CONTROL J  &hm LEFT_ALT K         &hm RIGHT_SHIFT L  &hm RIGHT_GUI SEMI      &kp SINGLE_QUOTE
-&kp LEFT_SHIFT           &hm LEFT_CONTROL Z     &hm LEFT_ALT X     &hm LEFT_SHIFT C               &hm LEFT_GUI V                  &kp B                                             &none                         &none                                                             &kp N       &hm RIGHT_GUI M      &hm RIGHT_SHIFT COMMA  &hm RIGHT_ALT DOT  &hm RIGHT_CONTROL FSLH  &hm_lt 10 RCTRL
-                         &hm_lt 8 LEFT_BRACKET  &kp RIGHT_BRACKET  &hm LEFT_GUI LEFT_PARENTHESIS  &hm LEFT_ALT RIGHT_PARENTHESIS              &hm_lt 3 SPACE  &hm_lt 4 ENTER        &none                         &none                      &mo 4                  &hm_lt 4 ENTER              &hm LALT MINUS       &kp EQUAL              &kp LEFT_BRACE     &hm_lt 8 RIGHT_BRACE
+&hm ESCAPE GRAVE         &kp N1                 &kp N2             &kp N3                           &kp N4                          &kp N5                                                                                                                                            &kp N6      &kp N7               &kp N8                 &kp N9             &kp N0                  &kp BACKSPACE
+&kp TAB                  &kp Q                  &kp W              &kp E                            &kp R                           &kp T                                                                                                                                             &kp Y       &kp U                &kp I                  &kp O              &kp P                   &kp BACKSLASH
+&mt LEFT_CONTROL ESCAPE  &hm LEFT_WIN A         &hm LEFT_SHIFT S   &hm LEFT_ALT D                   &hm LEFT_CONTROL F              &hm_lt 5 G                  &kp LC(LS(LEFT_ALT))  &kp LC(LS(LEFT_COMMAND))      &kp RC(RS(RIGHT_COMMAND))  &kp RC(RS(RIGHT_ALT))                  &hm_lt 5 H  &hm RIGHT_CONTROL J  &hm LEFT_ALT K         &hm RIGHT_SHIFT L  &hm RIGHT_GUI SEMI      &kp SINGLE_QUOTE
+&kp LEFT_SHIFT           &hm LEFT_CONTROL Z     &hm LEFT_ALT X     &hm LEFT_SHIFT C                 &hm LEFT_GUI V                  &kp B                                             &none                         &none                                                             &kp N       &hm RIGHT_GUI M      &hm RIGHT_SHIFT COMMA  &hm RIGHT_ALT DOT  &hm RIGHT_CONTROL FSLH  &hm_lt 10 RCTRL
+                         &hm_lt 8 LEFT_BRACKET  &kp RIGHT_BRACKET  &hm_left_parenthesis LEFT_GUI 0  &hm LEFT_ALT RIGHT_PARENTHESIS              &hm_lt 3 SPACE  &hm_lt 4 ENTER        &none                         &none                      &mo 4                  &hm_lt 4 ENTER              &hm LALT MINUS       &kp EQUAL              &kp LEFT_BRACE     &hm_lt 8 RIGHT_BRACE
             >;
         };
 
@@ -287,7 +300,7 @@
         layer_3 {
             bindings = <
 &kp F11            &kp F1                             &kp F2                               &kp F3                             &kp F4                                 &kp F5                                                                              &kp F6          &kp F7                   &kp F8                   &kp F9                       &kp F10            &kp F12
-&left_parenthesis  &kp LC(LA(LS(NUMBER_6)))           &kp LC(LS(LA(NUMBER_7)))             &kp LC(LS(LA(NUMBER_8)))           &kp LC(LS(LA(NUMBER_9)))               &kp LC(LA(LS(Z)))                                                                   &none           &none                    &none                    &none                        &none              &none
+&kp LC(LA(LS(N)))  &kp LC(LA(LS(NUMBER_6)))           &kp LC(LS(LA(NUMBER_7)))             &kp LC(LS(LA(NUMBER_8)))           &kp LC(LS(LA(NUMBER_9)))               &kp LC(LA(LS(Z)))                                                                   &none           &none                    &none                    &none                        &none              &none
 &kp CAPSLOCK       &hm LEFT_GUI LC(LA(LS(NUMBER_1)))  &hm LEFT_SHIFT LC(LA(LS(NUMBER_2)))  &hm LEFT_ALT LC(LA(LS(NUMBER_3)))  &hm LEFT_CONTROL LC(LA(LS(NUMBER_4)))  &kp LC(LA(LS(NUMBER_5)))         &none  &none      &none  &none                     &kp LEFT_ARROW  &hm RIGHT_CONTROL DOWN   &hm RIGHT_ALT UP_ARROW   &hm RIGHT_SHIFT RIGHT_ARROW  &kp RIGHT_GUI      &none
 &none              &hm LEFT_CONTROL DELETE            &hm LEFT_ALT BACKSPACE               &hm LEFT_SHIFT LC(LS(C))           &hm LWIN INSERT                        &kp ENTER                               &none      &none                            &kp HOME        &hm RIGHT_GUI PAGE_DOWN  &hm RIGHT_SHIFT PAGE_UP  &hm RIGHT_ALT END            &kp RIGHT_CONTROL  &none
                    &kp LC(LA(LS(LEFT)))               &kp LC(LA(LS(UP)))                   &kp LC(LA(LS(DOWN)))               &kp LC(LA(LS(RIGHT)))                                            &none  &none  &none      &none  &none  &kp LC(LA(LS(N)))                  &none                    &none                    &none                        &none
