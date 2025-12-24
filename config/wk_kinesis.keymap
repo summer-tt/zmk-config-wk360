@@ -384,11 +384,11 @@
 
         layer_5 {
             bindings = <
-&trans                      &trans        &trans       &trans    &trans            &trans                                                           &trans     &trans         &trans         &trans            &trans        &trans
-&two_kp EQUAL GREATER_THAN  &trans        &trans       &trans    &trans            &trans                                                           &trans     &trans         &trans         &trans            &trans        &trans
-&two_kp TILDE SLASH         &kp LEFT_GUI  &kp AT_SIGN  &kp HASH  &kp LEFT_CONTROL  &kp PERCENT          &trans  &trans      &trans  &trans          &kp CARET  &kp AMPERSAND  &kp ASTERISK   &kp PIPE          &kp TILDE     &kp DOUBLE_QUOTES
-&trans                      &trans        &trans       &trans    &trans            &trans                       &trans      &trans                  &trans     &trans         &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &trans
-                            &trans        &trans       &trans    &trans                         &trans  &trans  &trans      &trans  &trans  &trans             &trans         &trans         &trans            &trans
+&trans                      &trans           &trans       &trans    &trans      &trans                                                           &trans     &trans         &trans         &trans            &trans        &trans
+&two_kp EQUAL GREATER_THAN  &trans           &trans       &trans    &trans      &trans                                                           &trans     &trans         &trans         &trans            &trans        &trans
+&two_kp TILDE SLASH         &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT          &trans  &trans      &trans  &trans          &kp CARET  &kp AMPERSAND  &kp ASTERISK   &kp PIPE          &kp TILDE     &kp DOUBLE_QUOTES
+&trans                      &trans           &trans       &trans    &trans      &trans                       &trans      &trans                  &trans     &trans         &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &trans
+                            &trans           &trans       &trans    &trans                   &trans  &trans  &trans      &trans  &trans  &trans             &trans         &trans         &trans            &trans
             >;
         };
 
